@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.about_us.AboutUsFragment">
+
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+                    android:paddingLeft="5dp" android:paddingRight="5dp" android:paddingTop="5dp">
+
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"  >
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/tv_image"
+                    android:src="@drawable/cat"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView android:layout_width="100dp" android:layout_height="100dp"
+                    android:layout_marginTop="220dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/cat"/>
+        </RelativeLayout>
+
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/fr_about_us">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="320dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/tv_title"
+                          android:textColor="@android:color/black"
+                          android:textSize="28dp"
+                          android:textStyle="bold"
+                          android:text="@string/txt_tile"
+                          android:textAlignment="center"
+                          android:fontFamily="@font/notoserif_bold"
+
+                />
+                <Space android:layout_width="match_parent" android:layout_height="5dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/tv_tagline"
+                          android:textColor="@color/colorMain2"
+                          android:textSize="12sp"
+                          android:textStyle="normal"
+                          android:text="@string/txt_tagline"
+                          android:fontFamily="@font/roboto"
+                          android:textAlignment="center"/>
+                <Space android:layout_width="match_parent" android:layout_height="20dp"/>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/tv_detail_app"
+                          android:textColor="@android:color/black"
+                          android:textSize="14sp"
+                          android:textStyle="normal"
+                          android:fontFamily="@font/roboto"
+                          android:text="@string/txt_detail_app"/>
+
+                <Space android:layout_width="match_parent" android:layout_height="10dp"/>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/tv_support_title"
+                          android:textColor="@android:color/black"
+                          android:textSize="16sp"
+                          android:textStyle="bold"
+                          android:fontFamily="@font/notoserif_bold"
+                          android:text="@string/txt_support"/>
+
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:id="@+id/tv_support"
+                          android:textColor="@android:color/black"
+                          android:textSize="14sp"
+                          android:textStyle="normal"
+                          android:text="@string/txt_support_item"
+                            android:fontFamily="@font/roboto"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

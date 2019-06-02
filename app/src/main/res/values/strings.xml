@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Kitty App</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+<<<<<<< HEAD
+=======
+    <string name="txt_tile">Kitty App</string>
+    <string name="txt_detail_app">Kitty App adalah sebuah aplikasi yang menyediakan informasi mengenai berbagai jenis
+        kucing. Infomasi tersebut meliputi gambar, jenis dan deskripsi mengenai seekor kucing. Diharapkan melalui
+        aplikasi ini, pengguna akan dapat lebih mengetahui tentang kucing.
+    </string>
+    <string name="txt_support">Didukung oleh</string>
+    <string name="txt_support_item">O Muhammad Adi Febri Setiawan</string>
+    <string name="txt_tagline">---* my cat is my life *----</string>
+>>>>>>> commit
+</resources>
