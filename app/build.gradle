@@ -49,10 +49,4 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     kapt 'com.github.bumptech.glide:compiler:4.9.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
-<<<<<<< HEAD
-=======
-    implementation 'de.hdodenhof:circleimageview:2.2.0'
->>>>>>> commit
-
-
 }
