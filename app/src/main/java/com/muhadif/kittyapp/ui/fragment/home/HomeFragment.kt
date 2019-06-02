@@ -1,4 +1,4 @@
-package com.muhadif.kittyapp.fragment.home
+package com.muhadif.kittyapp.ui.fragment.home
 
 
 import android.os.Bundle
@@ -16,6 +16,7 @@ import com.google.firebase.storage.FirebaseStorage
 import com.muhadif.kittyapp.R
 import com.muhadif.kittyapp.data.adapter.HomeAdapter
 import com.muhadif.kittyapp.data.model.Kitty
+import com.muhadif.kittyapp.ui.detail.KittyDetailIntent
 import kotlinx.android.synthetic.main.fragment_home.*
 
 
@@ -32,8 +33,6 @@ class HomeFragment : Fragment(), HomeContract.View {
     lateinit var adapter : HomeAdapter
     lateinit var linearLayoutManager : LinearLayoutManager
     private var kities : MutableList<Kitty> = mutableListOf()
-
-
 
 
     override fun onCreateView(
@@ -55,8 +54,7 @@ class HomeFragment : Fragment(), HomeContract.View {
         presenter.loadData()
 
         adapter = HomeAdapter(kities, storage, context!!) {
-            Toast.makeText(context, "Hello ${it.name}", Toast.LENGTH_SHORT ).show()
-            Log.d("ITEM", "CLICKED")
+            startActivity(context!!.KittyDetailIntent(it))
         }
 
         setRecycleView()

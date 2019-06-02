@@ -8,8 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-<<<<<<< HEAD
-=======
+
     <!--<style name="Title_Font">-->
         <!--<item name="android:fontFamily">@font/notoserif_bold</item>-->
     <!--</style>-->
@@ -18,5 +17,5 @@
         <!--<item name="android:fontFamily">@font/robot</item>-->
     <!--</style>-->
 
->>>>>>> commit
+
 </resources>

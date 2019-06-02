@@ -1,4 +1,4 @@
-package com.muhadif.kittyapp.fragment.tips
+package com.muhadif.kittyapp.ui.fragment.tips
 
 import android.content.Context
 import android.net.Uri

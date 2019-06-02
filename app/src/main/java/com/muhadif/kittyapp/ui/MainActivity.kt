@@ -1,34 +1,25 @@
-package com.muhadif.kittyapp
+package com.muhadif.kittyapp.ui
 
-<<<<<<< HEAD
+import com.muhadif.kittyapp.R
+
+
 import android.os.Bundle
 import android.util.Log
-=======
 import android.graphics.Color
 import android.os.Build
-import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.WindowManager
 import android.widget.SearchView
->>>>>>> commit
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.firebase.FirebaseApp
-<<<<<<< HEAD
-import com.muhadif.kittyapp.fragment.home.HomeFragment
-
-class MainActivity : AppCompatActivity() {
-
-=======
-import com.muhadif.kittyapp.fragment.about_us.AboutUsFragment
-import com.muhadif.kittyapp.fragment.home.HomeFragment
-import com.muhadif.kittyapp.fragment.tips.TipsFragment
+import com.muhadif.kittyapp.ui.fragment.about_us.AboutUsFragment
+import com.muhadif.kittyapp.ui.fragment.home.HomeFragment
+import com.muhadif.kittyapp.ui.fragment.tips.TipsFragment
 
 class MainActivity : AppCompatActivity() {
 lateinit var searchBar : SearchView
->>>>>>> commit
 
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
@@ -49,13 +40,11 @@ lateinit var searchBar : SearchView
         false
     }
 
-<<<<<<< HEAD
-=======
+
  fun setUrl(url:String){
      searchBar.setQuery(url,false)
  }
 
->>>>>>> commit
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -69,8 +58,6 @@ lateinit var searchBar : SearchView
         navView.menu.getItem(0).setChecked(true)
         changeFragment(0)
 
-<<<<<<< HEAD
-=======
         //transparant status bar
         if (Build.VERSION.SDK_INT >= 19 && Build.VERSION.SDK_INT < 21) {
             setWindowFlag(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, true)
@@ -95,7 +82,7 @@ lateinit var searchBar : SearchView
             winParams.flags = winParams.flags and bits.inv()
         }
         win.attributes = winParams
->>>>>>> commit
+
     }
 
     private fun changeFragment(id : Int){
@@ -106,15 +93,6 @@ lateinit var searchBar : SearchView
 
         when(id){
             0 -> fragment = HomeFragment.getInstrance()
-<<<<<<< HEAD
-        }
-
-        var transition = supportFragmentManager.beginTransaction()
-
-        transition.replace(R.id.fl_home, fragment).commit()
-    }
-
-=======
             1 -> fragment = AboutUsFragment.getInstrance()
             2 -> fragment = TipsFragment.getInstrance()
 
@@ -123,5 +101,5 @@ lateinit var searchBar : SearchView
         var transition = supportFragmentManager.beginTransaction()
         transition.replace(R.id.fl_home, fragment).commit()
     }
->>>>>>> commit
+
 }

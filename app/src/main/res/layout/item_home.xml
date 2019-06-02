@@ -2,36 +2,13 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
                                    xmlns:app="http://schemas.android.com/apk/res-auto"
                                    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-<<<<<<< HEAD
-                                   android:layout_height="70dp" android:padding="10dp"
-=======
                                    android:layout_height="250dp" android:padding="10dp"
                                    android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
->>>>>>> commit
                                    app:cardBackgroundColor="@android:color/white"
                                    app:cardUseCompatPadding="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
-<<<<<<< HEAD
-                                                       android:layout_height="match_parent"
-    >
 
-        <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
-                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
-                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
-                android:id="@+id/iv_kitty"/>
-
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:text="Kucing"
-                app:layout_constraintStart_toEndOf="@+id/iv_kitty" android:layout_marginStart="28dp"
-                android:id="@+id/tv_kitty_name" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="10dp"/>
-=======
                                                        android:layout_height="match_parent">
 
         <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
@@ -69,21 +46,10 @@
                     android:text="Deskripsi kucing yang ada pada aplikasi ini akan ditampikan disini"
                     android:textSize="14dp"
                     android:fontFamily="@font/roboto"/>
-            <view
-                    android:id="@+id/tv_line"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@android:color/black"
-                    android:alpha="50"
-                    android:layout_marginTop="242dp"/>
 
 
         </RelativeLayout>
->>>>>>> commit
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
 
 </androidx.cardview.widget.CardView>

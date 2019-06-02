@@ -1,4 +1,4 @@
-package com.muhadif.kittyapp.fragment.about_us
+package com.muhadif.kittyapp.ui.fragment.about_us
 
 import android.content.Context
 import android.net.Uri

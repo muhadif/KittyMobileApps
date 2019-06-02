@@ -1,4 +1,4 @@
-package com.muhadif.kittyapp.fragment.home
+package com.muhadif.kittyapp.ui.fragment.home
 
 import android.util.Log
 import com.google.firebase.firestore.FirebaseFirestore
@@ -24,6 +24,7 @@ class HomePresenter(
             for (result in results){
 
                 val kitty = Kitty(
+                    id = result.id,
                     name = result["name"].toString(),
                     description = result["description"].toString(),
                     image = result["image"].toString(),

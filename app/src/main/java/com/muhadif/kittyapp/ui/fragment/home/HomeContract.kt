@@ -1,4 +1,4 @@
-package com.muhadif.kittyapp.fragment.home
+package com.muhadif.kittyapp.ui.fragment.home
 
 import com.muhadif.kittyapp.data.model.Kitty
 

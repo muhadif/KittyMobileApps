@@ -1,9 +1,10 @@
-package com.muhadif.kittyapp
+package com.muhadif.kittyapp.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.muhadif.kittyapp.R
 
 class SplashActivity : AppCompatActivity() {
     private val DELAY: Long = 3000
